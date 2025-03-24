@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorar configuraciones de Firebase
+backend/src/config/firebaseConfig.json
