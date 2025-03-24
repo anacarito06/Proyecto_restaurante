@@ -1,0 +1,158 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #2c2c2c; /* Fondo oscuro consistente */
+  color: white;               /* Texto blanco para contraste */
+  min-height: 100vh;          /* Asegura que cubra toda la altura de la pantalla */
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c2c2c; /* Fondo oscuro */
+  color: white;              /* Texto blanco para contraste */
+  min-height: 100vh;         /* Asegura que cubra toda la altura de la pantalla */
+}
+
+.producto-card {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  overflow: hidden;
+  width: 250px; /* Tamaño fijo para evitar estiramientos */
+  margin: 0 auto;
+}
+
+.producto-card:hover {
+  transform: scale(1.02);
+}
+
+.img-producto {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ajuste para mantener proporción */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+  color: #ffcc00;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Botones generales */
+button, .boton-inicio {
+  background-color: #4caf50;   /* Verde predeterminado */
+  color: white;                /* Texto blanco */
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+button:hover, .boton-inicio:hover {
+  background-color: #43a047;   /* Verde más intenso */
+  color: rgb(0, 0, 0);                /* Texto blanco asegurado */
+  transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Botón de "Finalizar Pedido" */
+button.finalizar-pedido {
+  background-color: #007bff;  /* Azul */
+  color: white;                /* Texto blanco */
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+button.finalizar-pedido:hover {
+  background-color: #0056b3;  /* Azul más oscuro */
+  color: rgb(0, 0, 0);                /* Texto blanco */
+}
+
+/* Botón de "Eliminar" */
+button.eliminar-producto {
+  background-color: #e74c3c;  /* Rojo */
+  color: rgb(0, 0, 0);                /* Texto blanco */
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+button.eliminar-producto:hover {
+  background-color: #c0392b;  /* Rojo más oscuro */
+  color: white;                /* Texto blanco */
+}
+
+/* Botones del menú */
+.producto-card button {
+  background-color: #4caf50;   /* Verde predeterminado */
+  color: white;                /* Texto blanco */
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+nav a {
+  color: white;
+  background-color: #4caf50;  /* Verde predeterminado */
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+
+nav a:hover {
+  background-color: #43a047;  /* Verde más intenso al pasar el mouse */
+  transform: scale(1.1);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);               /* Aseguramos que el texto siempre sea visible */
+}
+
+nav a:active {
+  transform: scale(0.95);
+  background-color: #388e3c;  /* Verde más oscuro al hacer clic */
+}
